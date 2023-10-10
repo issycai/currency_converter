@@ -26,7 +26,7 @@ To run the project locally, follow these steps:
 2. Build the Project:
 
 ```shell
-cd currencyconverter
+cd currency_converter
 ./gradlew build
 ```
 
