@@ -16,7 +16,7 @@ import java.math.RoundingMode
 @Service
 class CryptoService(private val restTemplate: RestTemplate) {
     private lateinit var currencies: List<String>
-
+    
     init {
         val csvData = CSVUtils.parseCSV("src/main/resources/currencies.csv")
         currencies = csvData.mapNotNull { it["Currency code"] }
